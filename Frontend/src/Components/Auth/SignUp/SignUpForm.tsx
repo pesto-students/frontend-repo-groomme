@@ -240,7 +240,7 @@ const SignUpForm = ({
               <Typography>
                 By creating an account, I agree to our{" "}
                 <Link
-                  to="https://example.com/terms"
+                  to={`${window.location.origin}${openRouteConstants.termsAndConditions}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: "underline", color: "#000" }}
@@ -249,7 +249,7 @@ const SignUpForm = ({
                 </Link>{" "}
                 and{" "}
                 <Link
-                  to="https://example.com/privacy"
+                  to={`${window.location.origin}${openRouteConstants.privacyPolicy}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: "underline", color: "#000" }}

@@ -24,6 +24,7 @@ import ForgotPassword from "../ForgotPassword/ForgotPassword";
 
 function SignInForm() {
   const navigate = useNavigate();
+
   const [showPassword, setShowPassword] = useState(false);
   const [errors, setErrors] = useState<{ [key: string]: string }>({});
   const [signInFormValues, setSignInFormValues] =
@@ -226,7 +227,7 @@ function SignInForm() {
               <Typography sx={{ textAlign: "center" }}>
                 By continuing, you agree to the{"  "}
                 <Link
-                  to="https://example.com/terms"
+                  to={`${window.location.origin}${openRouteConstants.termsAndConditions}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: "underline", color: "#000" }}
@@ -235,7 +236,7 @@ function SignInForm() {
                 </Link>
                 and{"  "}
                 <Link
-                  to="https://example.com/privacy"
+                  to={`${window.location.origin}${openRouteConstants.privacyPolicy}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   style={{ textDecoration: "underline", color: "#000" }}
@@ -245,38 +246,6 @@ function SignInForm() {
                 .
               </Typography>
             </FormHelperText>
-          </Grid>
-
-          <Grid
-            item
-            xs={12}
-            sx={{
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-              gap: 4,
-              flexDirection: {
-                xs: "column",
-                sm: "row",
-              },
-            }}
-          >
-            <Link
-              to="https://example.com/terms"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "underline", color: "#000" }}
-            >
-              Other issues with sign in
-            </Link>{" "}
-            <Link
-              to="https://example.com/terms"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{ textDecoration: "underline", color: "#000" }}
-            >
-              Forgot Password
-            </Link>
           </Grid>
         </Grid>
       </Box>

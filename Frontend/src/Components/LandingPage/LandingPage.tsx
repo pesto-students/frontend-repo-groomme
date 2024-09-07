@@ -81,7 +81,7 @@ function LandingPage() {
     if (category) {
       filteredSalons = filteredSalons.filter((salon: SalonInformationType) =>
         salon.services.some((service) =>
-          service.category.toLowerCase().includes(category.toLowerCase())
+          service.category?.toLowerCase().includes(category.toLowerCase())
         )
       );
     }
