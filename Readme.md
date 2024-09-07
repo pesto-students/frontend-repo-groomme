@@ -26,6 +26,14 @@ npm run dev
 ```
 
 BE deployment URL : [Groome Backend deployment link](https://groommebe.onrender.com/)
-BE deployment URL : [Groome Frontend deployment link](https://groommebe.onrender.com/)
+FE deployment URL : [Groome Frontend deployment link](https://groommebe.onrender.com/)
 
 contact us : support.groomme@gmail.com
+
+salon login credentials:
+email: salon@groomme.com
+pass : 123123123
+
+customer login credentials:
+email: customer@groomme.com
+pass : 123123123
